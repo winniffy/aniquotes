@@ -1,0 +1,99 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --bgLight: #E8E7E6;
+}
+
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bgLight);
+}
+
+main {
+    height: 100vh;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid var(--black);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header_text {
+    font-size: 4rem;
+}
+
+.header_text-light {
+    font-weight: 400;
+}
+
+.quotes {
+    margin: 6rem 0 2rem;
+    max-width: 15%;
+}
+
+
+/* quote */
+.quotes_container {
+    width: 100%;
+    padding: 3rem 4rem;
+    background-color: var(--bgLight);
+    border: 7px solid var(--black);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-radius: 1rem;
+}
+
+.quote {
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.character {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+
+/* button */
+.btn_container {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--black);
+    margin-top: 3rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--black);
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    border-radius: .7rem;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
