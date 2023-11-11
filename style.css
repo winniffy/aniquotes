@@ -97,3 +97,39 @@ header {
     font-size: 2rem;
     cursor: pointer;
 }
+
+.dark {
+    position: absolute;
+    left: 90%;
+    bottom: 5%;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid;
+}
+
+.dark_mode {
+    background-color: var(--black);
+    color: var(--bgLight);
+}
+
+.dark_btn-container {
+    border: 1px solid var(--bgLight);
+}
+
+.dark_btn {
+    color: var(--black);
+    background-color: var(--bgLight);
+}
+
+.dark_quote {
+    background-color: var(--black);
+    border: 7px solid var(--bgLight);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    color: var(--bgLight);
+}
+
+.dark_header {
+    border-bottom: 1px solid var(--bgLight);
+}
