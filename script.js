@@ -13,11 +13,12 @@ const btnArr = [
   "tatakae.",
 ];
 
+// random button word function
 function randomBtnWord() {
   return btnArr[Math.floor(Math.random() * btnArr.length)];
 }
 
-// on load
+// init function on load
 function init() {
   randomBtnWord();
   fetch("https://animechan.xyz/api/random")
@@ -50,16 +51,20 @@ btnContainer.addEventListener("click", (e) => {
   // })
 });
 
+// dark mode toggle
 const changeMode = document.querySelector(".dark");
 const body = document.querySelector("body");
 const btn = document.querySelector(".btn");
 const quoteContainer = document.querySelector(".quotes_container");
 const header = document.querySelector("header");
 
-changeMode.addEventListener("click", () => {
+// dark mode function
+function darkModeToggle() {
   body.classList.toggle("dark_mode");
   btnContainer.classList.toggle("dark_btn-container");
   btn.classList.toggle("dark_btn");
   quoteContainer.classList.toggle("dark_quote");
   header.classList.toggle("dark_header");
-});
+}
+
+changeMode.addEventListener("click", darkModeToggle);

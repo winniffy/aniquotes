@@ -1,6 +1,5 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 
 :root {
     --black: #000;
@@ -8,7 +7,7 @@
     --bgLight: #E8E7E6;
 }
 
-*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+*, *::before, *::after {box-sizing: border-box; margin: 0;}
 
 html {
     font-size: 62.5%;
@@ -49,7 +48,6 @@ header {
     max-width: 15%;
 }
 
-
 /* quote */
 .quotes_container {
     width: 100%;
@@ -72,7 +70,6 @@ header {
     font-weight: 700;
     margin-top: 2rem;
 }
-
 
 /* button */
 .btn_container {
@@ -132,4 +129,15 @@ header {
 
 .dark_header {
     border-bottom: 1px solid var(--bgLight);
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .dark {
+        left: 60%;
+    }
 }
