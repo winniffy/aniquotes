@@ -67,4 +67,5 @@ function darkModeToggle() {
   header.classList.toggle("dark_header");
 }
 
+// dark mode button event listener
 changeMode.addEventListener("click", darkModeToggle);
